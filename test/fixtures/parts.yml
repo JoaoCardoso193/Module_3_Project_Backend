@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  health: 9.99
+  speed: 9.99
+  attack: 9.99
+  defense: 9.99
+  battery_life: 9.99
+
+two:
+  name: MyString
+  description: MyText
+  health: 9.99
+  speed: 9.99
+  attack: 9.99
+  defense: 9.99
+  battery_life: 9.99
