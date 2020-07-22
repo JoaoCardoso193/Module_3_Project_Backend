@@ -2,12 +2,14 @@ User.destroy_all
 Robot.destroy_all
 Part.destroy_all
 RobotPart.destroy_all
+RobotMove.destroy_all
 UserRobot.destroy_all
 
 User.reset_pk_sequence
 Robot.reset_pk_sequence
 Part.reset_pk_sequence
 RobotPart.reset_pk_sequence
+RobotMove.reset_pk_sequence
 UserRobot.reset_pk_sequence
 
 
@@ -47,7 +49,7 @@ rm1 = RobotMove.create(robot_id: r1.id, move_id: m1.id)
 rm2 = RobotMove.create(robot_id: r1.id, move_id: m2.id)
 rm3 = RobotMove.create(robot_id: r1.id, move_id: m3.id)
 
-# r1.get_stats
+r1.get_stats
 
 #robot 2 and associated parts
 r2 = u1.create_robot('robot 2')
@@ -60,7 +62,7 @@ rm4 = RobotMove.create(robot_id: r2.id, move_id: m1.id)
 rm5 = RobotMove.create(robot_id: r2.id, move_id: m4.id)
 rm6 = RobotMove.create(robot_id: r2.id, move_id: m5.id)
 
-# r2.get_stats
+r2.get_stats
 
 #robot 3 and associated parts
 r3 = u1.create_robot('robot 3')
@@ -72,11 +74,27 @@ rp9 = RobotPart.create(robot_id: r3.id, part_id: p9.id)
 rm7 = RobotMove.create(robot_id: r3.id, move_id: m2.id)
 rm8 = RobotMove.create(robot_id: r3.id, move_id: m3.id)
 rm9 = RobotMove.create(robot_id: r3.id, move_id: m4.id)
-# r3.get_stats
+r3.get_stats
+
+#robot 4 and associated parts
+r4 = u2.create_robot('robot 4')
+
+rp10 = RobotPart.create(robot_id: r4.id, part_id: p1.id)
+rp11 = RobotPart.create(robot_id: r4.id, part_id: p5.id)
+rp12 = RobotPart.create(robot_id: r4.id, part_id: p6.id)
+
+rm7 = RobotMove.create(robot_id: r4.id, move_id: m2.id)
+rm8 = RobotMove.create(robot_id: r4.id, move_id: m3.id)
+rm9 = RobotMove.create(robot_id: r4.id, move_id: m4.id)
+r4.get_stats
 
 #associating users and robots
+
+#Authored
 ur1 = UserRobot.create(user_id: u1.id, robot_id: r1.id)
 ur2 = UserRobot.create(user_id: u1.id, robot_id: r2.id)
 ur3 = UserRobot.create(user_id: u1.id, robot_id: r3.id)
+ur4 = UserRobot.create(user_id: u2.id, robot_id: r4.id)
 
-ur4 = UserRobot.create(user_id: u2.id, robot_id: r1.id)
+#Saved
+ur5 = UserRobot.create(user_id: u2.id, robot_id: r1.id)
