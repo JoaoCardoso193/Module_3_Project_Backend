@@ -23,8 +23,6 @@ ActiveRecord::Schema.define(version: 2020_07_21_195707) do
     t.string "stat"
     t.float "value"
     t.float "cost"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "parts", force: :cascade do |t|
@@ -37,22 +35,16 @@ ActiveRecord::Schema.define(version: 2020_07_21_195707) do
     t.float "attack"
     t.float "defense"
     t.float "battery_life"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "robot_moves", force: :cascade do |t|
     t.integer "robot_id"
     t.integer "move_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "robot_parts", force: :cascade do |t|
     t.integer "robot_id"
     t.integer "part_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "robots", force: :cascade do |t|
@@ -63,21 +55,15 @@ ActiveRecord::Schema.define(version: 2020_07_21_195707) do
     t.float "attack"
     t.float "defense"
     t.float "battery_life"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "user_robots", force: :cascade do |t|
     t.integer "user_id"
     t.integer "robot_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "user_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

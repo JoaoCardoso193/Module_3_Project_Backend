@@ -4,7 +4,7 @@ class CreateRobotParts < ActiveRecord::Migration[6.0]
       t.integer :robot_id
       t.integer :part_id
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

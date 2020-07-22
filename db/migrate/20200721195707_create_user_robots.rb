@@ -4,7 +4,7 @@ class CreateUserRobots < ActiveRecord::Migration[6.0]
       t.integer :user_id
       t.integer :robot_id
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

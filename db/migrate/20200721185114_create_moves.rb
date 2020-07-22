@@ -9,7 +9,7 @@ class CreateMoves < ActiveRecord::Migration[6.0]
       t.float :value
       t.float :cost
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

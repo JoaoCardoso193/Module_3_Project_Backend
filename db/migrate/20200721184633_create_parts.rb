@@ -11,7 +11,7 @@ class CreateParts < ActiveRecord::Migration[6.0]
       t.float :defense
       t.float :battery_life
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end
