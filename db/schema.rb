@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2020_07_21_195707) do
 
   create_table "robots", force: :cascade do |t|
     t.string "name"
-    t.integer "author"
+    t.string "author"
     t.float "health"
     t.float "speed"
     t.float "attack"
