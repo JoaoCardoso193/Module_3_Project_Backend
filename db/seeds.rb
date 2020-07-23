@@ -30,11 +30,11 @@ p8 = Part.create(name: 'torso 3', image_url: 'images/robot_torso.png', descripti
 p9 = Part.create(name: 'lower_body 3', image_url: 'images/robot_lower_body.png', description: 'lower_body 3 description', category: 'lower_body', health: 10, speed: 10, attack: 10, defense: 10, battery_life: 10)
 
 #Making all moves
-m1 = Move.create(name: 'offensive 1', description: 'move 1 description', category: 'offensive', target: 'opponent', stat: 'health', value: -20, cost: -5)
-m2 = Move.create(name: 'offensive 2', description: 'move 2 description', category: 'offensive', target: 'opponent', stat: 'health', value: -10, cost: -2)
-m3 = Move.create(name: 'attack-boost', description: 'move 3 description', category: 'stat-based', target: 'self', stat: 'attack', value: 20, cost: -4)
-m4 = Move.create(name: 'defense-boost', description: 'move 4 description', category: 'stat-based', target: 'self', stat: 'defense', value: 20, cost: -4)
-m5 = Move.create(name: 'slow-down', description: 'move 5 description', category: 'stat-based', target: 'opponent', stat: 'speed', value: -20, cost: -5)
+m1 = Move.create(name: 'offensive 1', summary: 'attacking the opponent', description: 'move 1 description', category: 'offensive', target: 'other', stat: 'health', value: 20, cost: 5)
+m2 = Move.create(name: 'offensive 2', summary: 'attacking the opponent', description: 'move 2 description', category: 'offensive', target: 'other', stat: 'health', value: 10, cost: 2)
+m3 = Move.create(name: 'attack-boost', summary: 'buffing attack', description: 'move 3 description', category: 'stat-based', target: 'self', stat: 'attack', value: 20, cost: 4)
+m4 = Move.create(name: 'defense-boost', summary: 'buffing defense', description: 'move 4 description', category: 'stat-based', target: 'self', stat: 'defense', value: 20, cost: 4)
+m5 = Move.create(name: 'slow-down', summary: "lowering opponent's speed", description: 'move 5 description', category: 'stat-based', target: 'other', stat: 'speed', value: -20, cost: 5)
 
 
 
@@ -74,6 +74,7 @@ rp9 = RobotPart.create(robot_id: r3.id, part_id: p9.id)
 rm7 = RobotMove.create(robot_id: r3.id, move_id: m2.id)
 rm8 = RobotMove.create(robot_id: r3.id, move_id: m3.id)
 rm9 = RobotMove.create(robot_id: r3.id, move_id: m4.id)
+
 r3.get_stats
 
 #robot 4 and associated parts
@@ -86,6 +87,7 @@ rp12 = RobotPart.create(robot_id: r4.id, part_id: p6.id)
 rm7 = RobotMove.create(robot_id: r4.id, move_id: m2.id)
 rm8 = RobotMove.create(robot_id: r4.id, move_id: m3.id)
 rm9 = RobotMove.create(robot_id: r4.id, move_id: m4.id)
+
 r4.get_stats
 
 #associating users and robots

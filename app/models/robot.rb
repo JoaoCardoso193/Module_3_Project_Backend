@@ -8,6 +8,7 @@ class Robot < ApplicationRecord
     has_many :user_robots
     has_many :users, through: :user_robots
 
+
     def get_stats        
         #health
         parts_health = self.parts.map{|part| part.health}
