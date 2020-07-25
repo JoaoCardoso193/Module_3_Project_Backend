@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_07_21_195707) do
 
   create_table "moves", force: :cascade do |t|
     t.string "name"
+    t.string "summary"
     t.text "description"
     t.string "category"
     t.string "target"

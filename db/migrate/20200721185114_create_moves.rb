@@ -2,6 +2,7 @@ class CreateMoves < ActiveRecord::Migration[6.0]
   def change
     create_table :moves do |t|
       t.string :name
+      t.string :summary
       t.text :description
       t.string :category
       t.string :target
