@@ -34,7 +34,7 @@ m1 = Move.create(name: 'offensive 1', summary: 'attacking the opponent', descrip
 m2 = Move.create(name: 'offensive 2', summary: 'attacking the opponent', description: 'move 2 description', category: 'offensive', target: 'other', stat: 'health', value: 10, cost: 2)
 m3 = Move.create(name: 'attack-boost', summary: 'buffing attack', description: 'move 3 description', category: 'stat-based', target: 'self', stat: 'attack', value: 20, cost: 4)
 m4 = Move.create(name: 'defense-boost', summary: 'buffing defense', description: 'move 4 description', category: 'stat-based', target: 'self', stat: 'defense', value: 20, cost: 4)
-m5 = Move.create(name: 'slow-down', summary: "lowering opponent's speed", description: 'move 5 description', category: 'stat-based', target: 'other', stat: 'speed', value: -20, cost: 5)
+m5 = Move.create(name: 'slow-down', summary: "lowering the opponent's speed", description: 'move 5 description', category: 'stat-based', target: 'other', stat: 'speed', value: -20, cost: 5)
 
 
 
