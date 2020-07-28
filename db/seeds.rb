@@ -4,7 +4,7 @@ Part.destroy_all
 Move.destroy_all
 RobotPart.destroy_all
 RobotMove.destroy_all
-UserRobot.destroy_all
+# UserRobot.destroy_all
 
 User.reset_pk_sequence
 Robot.reset_pk_sequence
@@ -12,7 +12,7 @@ Part.reset_pk_sequence
 Move.reset_pk_sequence
 RobotPart.reset_pk_sequence
 RobotMove.reset_pk_sequence
-UserRobot.reset_pk_sequence
+# UserRobot.reset_pk_sequence
 
 
 u1 = User.create(user_name: 'main_user')
@@ -40,7 +40,7 @@ m5 = Move.create(name: 'slow-down', summary: "lowering the opponent's speed", de
 
 
 
-#robot 1 and associated parts
+# robot 1 and associated parts
 r1 = u1.create_robot('robot 1')
 
 rp1 = RobotPart.create(robot_id: r1.id, part_id: p1.id)
@@ -92,13 +92,19 @@ rm9 = RobotMove.create(robot_id: r4.id, move_id: m4.id)
 
 r4.get_stats
 
+
+
+
+
+
+
 #associating users and robots
 
-#Authored
-ur1 = UserRobot.create(user_id: u1.id, robot_id: r1.id)
-ur2 = UserRobot.create(user_id: u1.id, robot_id: r2.id)
-ur3 = UserRobot.create(user_id: u1.id, robot_id: r3.id)
-ur4 = UserRobot.create(user_id: u2.id, robot_id: r4.id)
+# #Authored
+# ur1 = UserRobot.create(user_id: u1.id, robot_id: r1.id)
+# ur2 = UserRobot.create(user_id: u1.id, robot_id: r2.id)
+# ur3 = UserRobot.create(user_id: u1.id, robot_id: r3.id)
+# ur4 = UserRobot.create(user_id: u2.id, robot_id: r4.id)
 
 #Saved
-ur5 = UserRobot.create(user_id: u2.id, robot_id: r1.id)
+# ur5 = UserRobot.create(user_id: u2.id, robot_id: r1.id)

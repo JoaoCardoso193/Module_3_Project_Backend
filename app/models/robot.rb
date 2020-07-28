@@ -5,8 +5,7 @@ class Robot < ApplicationRecord
     has_many :robot_moves
     has_many :moves, through: :robot_moves
 
-    has_many :user_robots
-    has_many :users, through: :user_robots
+    belongs_to :user
 
     validates :name, presence: true
 
