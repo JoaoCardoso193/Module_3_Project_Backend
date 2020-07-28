@@ -35,8 +35,41 @@ class RobotsController < ApplicationController
             robot.save
             render json: robot          
         end
+    end
 
+    def update
+        robot = Robot.find(params[:id])
 
+        robot.name = robot_params[:name]
+
+        if robot.valid?
+
+            #deleting old robot part associations
+            old_robot_parts = RobotPart.all.select{|robot_part| robot_part.robot_id == robot.id}
+            old_robot_parts.each do |robot_part|
+                robot_part.destroy
+            end
+
+            #making new robot part associations
+            parts_params.each do |part_id|
+                RobotPart.create(robot_id: robot.id, part_id: part_id)
+            end
+        
+            #deleting old robot move associations
+            old_robot_moves = RobotMove.all.select{|robot_move| robot_move.robot_id == robot.id}
+            old_robot_moves.each do |robot_move|
+                robot_move.destroy
+            end
+
+        #making new robot move associations
+            moves_params.each do |move_id|
+                RobotMove.create(robot_id: robot.id, move_id: move_id)
+            end
+
+            # saving and rendering new robot json
+            robot.save
+            render json: robot
+        end
     end
 
     private
