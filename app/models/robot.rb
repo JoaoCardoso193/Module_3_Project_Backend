@@ -8,6 +8,8 @@ class Robot < ApplicationRecord
     has_many :user_robots
     has_many :users, through: :user_robots
 
+    validates :name, presence: true
+
 
     def get_stats        
         #health

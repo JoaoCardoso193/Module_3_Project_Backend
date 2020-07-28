@@ -1,6 +1,7 @@
 User.destroy_all
 Robot.destroy_all
 Part.destroy_all
+Move.destroy_all
 RobotPart.destroy_all
 RobotMove.destroy_all
 UserRobot.destroy_all
@@ -8,6 +9,7 @@ UserRobot.destroy_all
 User.reset_pk_sequence
 Robot.reset_pk_sequence
 Part.reset_pk_sequence
+Move.reset_pk_sequence
 RobotPart.reset_pk_sequence
 RobotMove.reset_pk_sequence
 UserRobot.reset_pk_sequence
