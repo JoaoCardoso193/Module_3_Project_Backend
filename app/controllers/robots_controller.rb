@@ -12,7 +12,7 @@ class RobotsController < ApplicationController
     end
 
     def create
-        user = User.find{|user| user.user_name == robot_params[:author]}
+        user = User.find_or_create_by(user_name: robot_params[:author])
         robot = Robot.new(robot_params)
         
         if robot.valid?
