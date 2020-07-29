@@ -2,7 +2,7 @@ class CreateRobots < ActiveRecord::Migration[6.0]
   def change
     create_table :robots do |t|
       t.string :name
-      t.string :author
+      t.integer :user_id
       t.float :health
       t.float :speed
       t.float :attack

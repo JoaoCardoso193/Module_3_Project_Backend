@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   resources :robots
   resources :users
+  resources :parts
+  resources :moves
+  resources :robot_parts
 end
