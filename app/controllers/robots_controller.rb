@@ -72,6 +72,11 @@ class RobotsController < ApplicationController
         end
     end
 
+    def destroy
+        robot = Robot.find(params[:robot_id])
+        robot.destroy
+    end
+
     private
 
     def robot_params

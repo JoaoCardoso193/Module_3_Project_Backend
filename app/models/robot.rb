@@ -9,6 +9,7 @@ class Robot < ApplicationRecord
 
     validates :name, presence: true
 
+    before_destroy :destroy_associations #destroy all associated joiners
 
     def get_stats        
         #health
@@ -40,6 +41,20 @@ class Robot < ApplicationRecord
         self.defense = defense_total / grand_total * 100
         self.battery_life = battery_life_total / grand_total * 100
         self.save
+    end
+
+    def destroy_associations
+        #destroying robot_part associations
+        robot_parts = RobotPart.all.select{|robot_part| robot_part.robot_id == self.id}
+        robot_parts.each do |robot_part|
+            robot_part.destroy
+        end
+
+        #destroying robot_move associations
+        robot_moves = RobotMove.all.select{|robot_move| robot_move.robot_id == self.id}
+        robot_moves.each do |robot_move|
+            robot_move.destroy
+        end
     end
 
     private
