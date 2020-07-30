@@ -1,24 +1,21 @@
-# README
+# Batttle Bots
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Battle Bots is a battling turn-based game, where players can create their own robots by selecting from a variety of modular parts and moves.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Clone both the [backend](https://github.com/JoaoCardoso193/Module_3_Project_Backend) and [frontend](https://github.com/JoaoCardoso193/Module_3_Project_Frontend) repositories onto your local machine.
 
-* System dependencies
+`cd` into the backend directory and run `bundle install` to download all the necessary gems for this project.
 
-* Configuration
+In the backend directory, and run `rails s` to start the server.
 
-* Database creation
+`cd` into the frontend directory and run `open index.html`.
 
-* Database initialization
+### Creator
 
-* How to run the test suite
+[João Cardoso])https://github.com/JoaoCardoso193
 
-* Services (job queues, cache servers, search engines, etc.)
+### License
 
-* Deployment instructions
-
-* ...
+[MIT](https://choosealicense.com/licenses/mit/)
