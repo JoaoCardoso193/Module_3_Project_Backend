@@ -15,7 +15,7 @@ RobotMove.reset_pk_sequence
 # UserRobot.reset_pk_sequence
 
 
-u1 = User.create(user_name: 'Joao')
+u1 = User.create(user_name: 'JC193')
 u2 = User.create(user_name: 'Mr. Chungus')
 
 #Making all parts
