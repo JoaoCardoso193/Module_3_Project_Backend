@@ -19,17 +19,17 @@ u1 = User.create(user_name: 'main_user')
 u2 = User.create(user_name: 'tester')
 
 #Making all parts
-p1 = Part.create(name: 'head 1', image_url: 'images/robot_head.png', description: 'head 1 description', category: 'head', health: 5, speed: 20, attack: 20, defense: 5, battery_life: 20)
-p2 = Part.create(name: 'torso 1', image_url: 'images/robot_torso.png', description: 'torso 1 description', category: 'torso', health: 5, speed: 20, attack: 20, defense: 5, battery_life: 20)
-p3 = Part.create(name: 'lower_body 1', image_url: 'images/robot_lower_body.png', description: 'lower_body 1 description', category: 'lower_body', health: 5, speed: 20, attack: 20, defense: 5, battery_life: 20)
+p1 = Part.create(name: 'head 1', image_url: 'images/head_1.png', description: 'head 1 description', category: 'head', health: 5, speed: 20, attack: 20, defense: 5, battery_life: 20)
+p2 = Part.create(name: 'torso 1', image_url: 'images/torso_1.png', description: 'torso 1 description', category: 'torso', health: 5, speed: 20, attack: 20, defense: 5, battery_life: 20)
+p3 = Part.create(name: 'lower_body 1', image_url: 'images/lower_body_1.png', description: 'lower_body 1 description', category: 'lower_body', health: 5, speed: 20, attack: 20, defense: 5, battery_life: 20)
 
-p4 = Part.create(name: 'head 2', image_url: 'images/robot_head.png', description: 'head 2 description', category: 'head', health: 20, speed: 5, attack: 5, defense: 20, battery_life: 5)
-p5 = Part.create(name: 'torso 2', image_url: 'images/robot_torso.png', description: 'torso 2 description', category: 'torso', health: 20, speed: 5, attack: 5, defense: 20, battery_life: 5)
-p6 = Part.create(name: 'lower_body 2', image_url: 'images/robot_lower_body.png', description: 'lower_body 2 description', category: 'lower_body', health: 20, speed: 5, attack: 5, defense: 20, battery_life: 5)
+p4 = Part.create(name: 'head 2', image_url: 'images/head_2.png', description: 'head 2 description', category: 'head', health: 20, speed: 5, attack: 5, defense: 20, battery_life: 5)
+p5 = Part.create(name: 'torso 2', image_url: 'images/torso_2.png', description: 'torso 2 description', category: 'torso', health: 20, speed: 5, attack: 5, defense: 20, battery_life: 5)
+p6 = Part.create(name: 'lower_body 2', image_url: 'images/lower_body_2.png', description: 'lower_body 2 description', category: 'lower_body', health: 20, speed: 5, attack: 5, defense: 20, battery_life: 5)
 
-p7 = Part.create(name: 'head 3', image_url: 'images/robot_head.png', description: 'head 3 description', category: 'head', health: 10, speed: 10, attack: 10, defense: 10, battery_life: 10)
-p8 = Part.create(name: 'torso 3', image_url: 'images/robot_torso.png', description: 'torso 3 description', category: 'torso', health: 10, speed: 10, attack: 10, defense: 10, battery_life: 10)
-p9 = Part.create(name: 'lower_body 3', image_url: 'images/robot_lower_body.png', description: 'lower_body 3 description', category: 'lower_body', health: 10, speed: 10, attack: 10, defense: 10, battery_life: 10)
+p7 = Part.create(name: 'head 3', image_url: 'images/head_3.png', description: 'head 3 description', category: 'head', health: 10, speed: 10, attack: 10, defense: 10, battery_life: 10)
+p8 = Part.create(name: 'torso 3', image_url: 'images/torso_3.png', description: 'torso 3 description', category: 'torso', health: 10, speed: 10, attack: 10, defense: 10, battery_life: 10)
+p9 = Part.create(name: 'lower_body 3', image_url: 'images/lower_body_3.png', description: 'lower_body 3 description', category: 'lower_body', health: 10, speed: 10, attack: 10, defense: 10, battery_life: 10)
 
 #Making all moves
 m1 = Move.create(name: 'offensive 1', summary: 'attacking the opponent', description: 'move 1 description', category: 'offensive', target: 'other', stat: 'health', value: 20, cost: 5)
