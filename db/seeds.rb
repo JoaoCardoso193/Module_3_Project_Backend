@@ -36,9 +36,9 @@ m1 = Move.create(name: 'Digital Blast', summary: 'attacking the opponent', descr
 m2 = Move.create(name: 'Metal Punch', summary: 'attacking the opponent', description: 'A balanced offensive move', category: 'offensive', target: 'other', stat: 'health', value: 10, cost: 3)
 m3 = Move.create(name: 'Attack Boost', summary: 'buffing attack', description: "Raises user's attack", category: 'stat-based', target: 'self', stat: 'attack', value: 50, cost: 7)
 m4 = Move.create(name: 'Defense Boost', summary: 'buffing defense', description: "Raises user's defense", category: 'stat-based', target: 'self', stat: 'defense', value: 50, cost: 7)
-m5 = Move.create(name: 'Slow Down', summary: "lowering the opponent's speed", description: "Lower's opponent's speed", category: 'stat-based', target: 'other', stat: 'speed', value: -50, cost: 7)
-m6 = Move.create(name: 'Intimidate', summary: "lowering the opponent's attack", description: "Lower's opponent's attack", category: 'stat-based', target: 'other', stat: 'attack', value: -33, cost: 7)
-m7 = Move.create(name: 'Flirt', summary: "lowering the opponent's attack", description: "Lower's opponent's attack", category: 'stat-based', target: 'other', stat: 'attack', value: -33, cost: 7)
+m5 = Move.create(name: 'Slow Down', summary: "lowering the opponent's speed", description: "Lowers opponent's speed", category: 'stat-based', target: 'other', stat: 'speed', value: -50, cost: 7)
+m6 = Move.create(name: 'Intimidate', summary: "lowering the opponent's attack", description: "Lowers opponent's attack", category: 'stat-based', target: 'other', stat: 'attack', value: -33, cost: 7)
+m7 = Move.create(name: 'Flirt', summary: "lowering the opponent's attack", description: "Lowers opponent's attack", category: 'stat-based', target: 'other', stat: 'attack', value: -33, cost: 7)
 m8 = Move.create(name: 'Recharge', summary: "recharging their battery", description: "Recharges battery", category: 'stat-based', target: 'self', stat: 'battery_life', value: 30, cost: 2)
 
 
